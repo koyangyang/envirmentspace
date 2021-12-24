@@ -8,10 +8,8 @@
       </div>
       <div class="button">
         <el-row>
-          <el-button type="primary" round>
-            <el-link href="https://fileb6307dc47521.vrh5.cn/v3/idea/Bc7t4NuC" target="_blank">
-              开始实验
-            </el-link>
+          <el-button type="primary" @click="goPage('https://fileb6307dc47521.vrh5.cn/v3/idea/Bc7t4NuC')">
+            开始实验
           </el-button>
         </el-row>
       </div>
@@ -46,6 +44,11 @@ export default {
     Navigate,
     Aside,
     Title
+  },
+  methods:{
+    goPage:function(url){
+        window.location.href = url;
+    }
   }
 };
 </script>
@@ -55,11 +58,11 @@ export default {
 .button{
   position: absolute;
   left: 10%;
-  top:30%;
+  top:40%;
 }
 .video{
   position: absolute;
-  right: 200px;
+  right: 10%;
   top:50px;
 }
 .el-header {
@@ -71,27 +74,20 @@ export default {
   background-color: #f4f4f4;
   color: #333;
   text-align: center;
-  line-height: 160px;
+  /* line-height: 160px; */
 }
 
 body > .el-container {
   margin-bottom: 40px;
 }
 
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
-}
 
-.el-container:nth-child(7) .el-aside {
-  line-height: 320px;
-}
-.el-row {
+/* .el-row {
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
   }
-}
+} */
 .el-col {
   border-radius: 4px;
 }
