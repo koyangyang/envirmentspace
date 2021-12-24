@@ -1,30 +1,58 @@
 <template>
   <div id="aside">
-    <el-descriptions class="margin-top" title="简介" :column="1" direction="vertical">
+  <div class="demo">
+    <div class="button2">
+      <el-row>  
+         <el-button type="primary" plain>
+          <el-link href="https://fileb6307dc47521.vrh5.cn/v3/idea/Bc7t4NuC" target="_blank">
+            仿真实验
+          </el-link>
+          </el-button>
+      </el-row>
+    </div>
+    <div class="span"><span>实验二维码</span></div>
+    <div class="block">
+      <el-image :src="circleUrl"></el-image>
+    </div>
+  </div>
+  <div class="font">
+ 
+    <el-descriptions class="margin-top" column="1" direction="vertical">
+
     <el-descriptions-item label="项目">环境空间</el-descriptions-item>
+
     <el-descriptions-item label="学习">河南科技大学</el-descriptions-item>
     </el-descriptions>
-    <el-row class="demo-avatar demo-basic">
-      <el-col :span="10">
-        <div class="sub-title">
-            二维码
-        </div>
-        <div class="demo-basic--circle">
-          <div class="block"><el-avatar shape="square" :size="100" :src="circleUrl">
-            </el-avatar>
-          </div>       
-        </div>
-      </el-col>   
-    </el-row>
+
+    
+    </div>
 
 
   </div>
 </template>
 
 <style scoped>
+ .button2{
+ 
+  position: absolute;
+  right: 17%;
+  top:-40px;
+}
+.span{
+ 
+  margin-right:1px;
+}
   #aside{
     padding-left: 30px;
   }
+  .demo{
+  height:340px;
+  }
+  
+
+
+
+
 </style>
 
 <script>
