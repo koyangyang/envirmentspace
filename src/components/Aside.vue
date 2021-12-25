@@ -20,6 +20,7 @@
 
 <style scoped>
   #aside{
+    padding-top: 20px;
     line-height: 40px;
   }
 </style>
