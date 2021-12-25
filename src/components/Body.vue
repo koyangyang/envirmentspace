@@ -1,34 +1,27 @@
 <template>
   <el-container>
     <el-header height="400px">
-      <div class="video">
-        <video controls="controls" width="400px" height="200px">
+      <div id="detial">
+          <Title/>
+      </div>
+      <div id="video">
+        <video controls="controls" width="350px" height="200px">
           <source src="../../static/video/1.mp4" type="video/mp4" />
         </video>
-      </div>
-      <div class="button">
-        <el-row>
-          <el-button type="primary" @click="goPage('https://fileb6307dc47521.vrh5.cn/v3/idea/Bc7t4NuC')">
-            开始实验
-          </el-button>
-        </el-row>
-      </div>
-      <div class="title">
-        <Title/>
       </div>
     </el-header>
     <el-main>
       <el-row :gutter="20">
-        <el-col :span="3"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="14">
+        <el-col :span="2"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="15">
           <div class="grid-content bg-purple1">
               <Navigate/>
           </div></el-col>
-        <el-col :span="4">
+        <el-col :span="5">
           <div class="grid-content bg-purple1">
             <Aside/>
           </div></el-col>
-        <el-col :span="3"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="2"><div class="grid-content bg-purple"></div></el-col>
       </el-row>
     </el-main>
   </el-container>
@@ -44,29 +37,23 @@ export default {
     Navigate,
     Aside,
     Title
-  },
-  methods:{
-    goPage:function(url){
-        window.location.href = url;
-    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.button{
-  position: absolute;
-  left: 10%;
-  top:40%;
+#detial{
+  flex: 1;
 }
-.video{
-  position: absolute;
-  right: 10%;
-  top:50px;
+#video{
+  flex: 1;
+  text-align: center;
+  padding-top: 80px;
 }
 .el-header {
   background: url("../../static/img/1.png");
+  display: flex;
   color: #333;
   text-align: center;
 }
