@@ -5,7 +5,7 @@
           <Title/>
       </div>
       <div id="video">
-        <video controls="controls" width="350px" height="200px">
+        <video controls="controls" style="height:240px">
           <source src="../../static/video/1.mp4" type="video/mp4" />
         </video>
       </div>
@@ -49,7 +49,8 @@ export default {
 #video{
   flex: 1;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
+  padding-left: 5%;
 }
 .el-header {
   background: url("../../static/img/1.png");
@@ -88,4 +89,20 @@ body > .el-container {
   border-radius: 4px;
   min-height: 36px;
 }
+
+/*手机*/
+        /* @media screen and (max-width:600px){
+           #video{
+             display: none;
+           }
+           .el-header {
+              background: url("../../static/img/1.png");
+              display: inline;
+              color: #333;
+              text-align: center;
+            }
+            #detial{
+              width: 100%;
+            }
+        } */
 </style>

@@ -7,8 +7,7 @@
     </div>
     <div class="span"><span><el-link type="warning" disabled>手机扫描下方二维码开始实验</el-link></span>
       <div class="block">
-        <el-image :src="circleUrl" style="width: 200px; height: 200px" :preview-src-list="srcList"></el-image>
-        <!-- <el-avatar shape="square" :size="200" :src="squareUrl"></el-avatar> -->
+        <el-image :src="circleUrl"></el-image>
       </div>
     </div>
     <div class="font">
